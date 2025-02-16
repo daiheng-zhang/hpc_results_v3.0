@@ -1,3 +1,7 @@
+# RUN script
+
+apptainer exec --nv   --bind /u/dzhang5/hpc_results_v3.0/NVIDIA/benchmarks/openfold/implementations/pytorch:/workspace   --bind /work/hdd/bcrc/dzhang5/pdb_data:/work/hdd/bcrc/dzhang5/pdb_data   --bind /sw/spack/deltas11-2023-03/apps/linux-rhel8-x86_64/gcc-8.5.0/gcc-11.4.0-yycklku:/sw/spack/deltas11-2023-03/apps/linux-rhel8-x86_64/gcc-8.5.0/gcc-11.4.0-yycklku   new_container.sif bash run_debug.sh
+
 # OpenFold PyTorch benchmark implementation
 
 This repository defines the submission implementation for the MLPerf HPC OpenFold benchmark.
